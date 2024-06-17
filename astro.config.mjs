@@ -34,7 +34,7 @@ export default defineConfig({
     remarkPlugins: [remarkReadingTime],
   },
   output: "static",
-  // adapter: netlify({ edgeMiddleware: true }),
+  adapter: netlify({ edgeMiddleware: true }),
   vite: {
     assetsInclude: "**/*.riv",
   },

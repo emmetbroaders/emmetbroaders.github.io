@@ -16,6 +16,7 @@ import { defineConfig } from 'astro/config'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://emmetbroaders.github.io',
+  base: 'emmetbroaders.github.io',
   integrations: [
     sitemap(),
     robotsTxt({
@@ -32,8 +33,8 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
-  output: "server",
-  adapter: netlify({ edgeMiddleware: true }),
+  output: "static",
+  // adapter: netlify({ edgeMiddleware: true }),
   vite: {
     assetsInclude: "**/*.riv",
   },

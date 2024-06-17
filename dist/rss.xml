@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Emmet Broaders’s Blog</title><description>my blog</description><link>https://emmetbroaders.github.io/</link><item><title>Hello, World</title><link>https://emmetbroaders.github.io/blog/post1/</link><guid isPermaLink="true">https://emmetbroaders.github.io/blog/post1/</guid><description>this is a post example</description><pubDate>Mon, 17 Jun 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Hi there!&lt;/h1&gt;
+&lt;p&gt;This Markdown file creates a page at &lt;code&gt;your-domain.com/post1/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It probably isn&apos;t styled much, but Markdown does support:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italics.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;lists&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://astro.build&quot;&gt;links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and more!&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded></item></channel></rss>

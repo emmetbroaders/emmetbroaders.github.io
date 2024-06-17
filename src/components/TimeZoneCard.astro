@@ -1,0 +1,39 @@
+---
+import { getCurrentTimeInUK, formatTimeForUK } from "../lib/helpers";
+import Card from "./Card/index.astro";
+---
+
+<script>
+  import { onCleanup, onMount } from "solid-js";
+  import { formatTimeForUK } from "../lib/helpers";
+
+  let interval: ReturnType<typeof setInterval>;
+
+  function updateClock() {
+    const timeDisplay = document.getElementById("timeDisplay");
+    const now = new Date();
+
+    if (timeDisplay) {
+      timeDisplay.textContent = formatTimeForUK(now);
+      timeDisplay.setAttribute("datetime", now.toISOString());
+    }
+  }
+
+  onMount(() => {
+    interval = setInterval(updateClock, 1000);
+  });
+
+  onCleanup(() => {
+    clearInterval(interval);
+  });
+</script>
+
+<Card colSpan="lg:col-span-1" rowSpan="md:row-span-2" title="Time Zone">
+  <time
+    datetime=""
+    id="timeDisplay"
+    class="text-xl xl:text-4xl xl:whitespace-nowrap w-20 xl:w-55 h-[calc(100%)] font-serif flex justify-center items-center"
+  >
+    {formatTimeForUK(getCurrentTimeInUK())}
+  </time>
+</Card>
